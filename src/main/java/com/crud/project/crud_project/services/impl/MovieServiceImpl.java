@@ -36,6 +36,12 @@ public class MovieServiceImpl implements MovieService{
 
     @Override
     public MovieEntity addMovie(MovieRequest request) {
+        Optional<MovieEntity> optionalMovieEntity = movieRepository.findByTitleContaining(request.getTitle());
+
+        if (optionalMovieEntity.isPresent()) {
+            throw new RuntimeException("Movie already exists by title");
+        }
+        
         MovieEntity movieEntity = new MovieEntity();
         movieEntity.setTitle(request.getTitle());
         movieEntity.setDescription(request.getDescription());
