@@ -39,7 +39,7 @@ username: root
 password: password
 
 To change this configuration, navigate to:
-/src/main/java/resources/application.properties
+/src/main/resources/application.properties
 
 And change the following values
 
