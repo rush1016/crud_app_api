@@ -32,3 +32,20 @@ chmod +x ./mvnw
 
 ### **Testing API endpoints**
 A Postman collection is included in the **postman/** directory of the project.
+
+### **Database Configuration**
+The default configuration for the database that this app is using are:
+username: root
+password: password
+
+To change this configuration, navigate to:
+/src/main/java/resources/application.properties
+
+And change the following values
+
+```sh
+spring.datasource.username=root
+```
+```sh
+spring.datasource.password=password
+```
