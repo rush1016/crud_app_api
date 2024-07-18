@@ -1,3 +1,6 @@
+# Basic CRUD API Backend using Spring Framework
+This a basic backend application that uses API endpoints for CREATING, READING, UPDATING, and DELETING Movie information.
+
 # **Getting started**
 
 ### **Java Version**
